@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to the Automatic Volume Solver</h1>
+    <form id="volumeForm">
+        <label for="length">Length:</label>
+        <input type="number" id="length" name="length"><br><br>
+        <label for="height">Height:</label>
+        <input type="number" id="height" name="height"><br><br>
+        <label for="width">Width:</label>
+        <input type="number" id="width" name="width"><br><br>
+        <label for="unit">Unit:</label>
+        <input type="text" id="unit" name="unit" placeholder="e.g., Cubic Centimeters"><br><br>
+        <input type="button" value="Calculate Volume" onclick="calculateVolume()">
+    </form>
+    <p id="output"></p>
+    <h2>Upload Image to Extract Dimensions</h2>
+    <input type="file" id="imageUpload" accept="image/*">
+    <p id="imageOutput"></p>
+    <script src="script.js"></script>
+</body>
+</html>
